@@ -1,0 +1,15 @@
+Passos e Comandos no terminal teste usbkbd:
+
+01 - Usar o arquivo Makefile para criar o arquivo executavel
+
+$ make -C /lib/modules/$(uname -r)/build M=$PWD modules
+
+02 - Carregar o programa uhid-example no Kernel
+
+Carrega o programa no modulo uhid, onde este já roda no Kernel do Linux
+
+$ sudo ./mousejoystick
+
+03 - Ver o módulo uhid em execução no Kernel
+$ lsmod | grep uhid
+
